@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>2511</width>
+    <height>2560</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1440</width>
+    <height>2560</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#page1 {
+    background-color: blue;
+}
+#page2 {
+    background-color: red;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="minimumSize">
+       <size>
+        <width>1440</width>
+        <height>2560</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: qconicalgradient(cx:0.982955, cy:0.931, angle:0, stop:0.357955 rgba(0, 0, 0, 255), stop:0.772727 rgba(1, 160, 32, 255));
+background-color: qconicalgradient(cx:0.773, cy:0.573045, angle:0, stop:0.357955 rgba(0, 0, 0, 255), stop:0.772727 rgba(1, 160, 32, 255));</string>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="page">
+       <widget class="QPushButton" name="btnLigar">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>330</y>
+          <width>461</width>
+          <height>201</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Bauhaus 93</family>
+          <pointsize>26</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+     background-color: #121212; 
+	border: 1px solid black;
+     border-radius: 1px;
+	color: Green;
+}</string>
+        </property>
+        <property name="text">
+         <string>LIGAR</string>
+        </property>
+       </widget>
+       <widget class="QSlider" name="Slider">
+        <property name="geometry">
+         <rect>
+          <x>2250</x>
+          <y>0</y>
+          <width>191</width>
+          <height>1301</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(0, 0, 0);</string>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label">
+        <property name="geometry">
+         <rect>
+          <x>1840</x>
+          <y>10</y>
+          <width>381</width>
+          <height>121</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Bauhaus 93</family>
+          <pointsize>28</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel{
+	background-color: rgb(0, 0, 0);
+	
+		color: Green
+}</string>
+        </property>
+        <property name="text">
+         <string>PWM</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="labelPWM">
+        <property name="geometry">
+         <rect>
+          <x>1840</x>
+          <y>150</y>
+          <width>391</width>
+          <height>121</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel{
+		color: white;
+}</string>
+        </property>
+        <property name="text">
+         <string>0</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QToolButton" name="btnSettings">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>20</y>
+          <width>301</width>
+          <height>201</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QToolButton{
+     background-color: #121212; 
+	border: 1px solid black;
+     border-radius: 1px;
+	color: white;
+}</string>
+        </property>
+        <property name="text">
+         <string>...</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btnAttack">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>570</y>
+          <width>461</width>
+          <height>201</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Bauhaus 93</family>
+          <pointsize>26</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+     background-color: #121212; 
+	border: 1px solid black;
+     border-radius: 1px;
+	color: Green;
+}</string>
+        </property>
+        <property name="text">
+         <string>ATACAR</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_5">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>1230</y>
+          <width>521</width>
+          <height>81</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Bauhaus 93</family>
+          <pointsize>26</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>Ronaldinho</string>
+        </property>
+       </widget>
+       <widget class="QLCDNumber" name="lcdNumber">
+        <property name="geometry">
+         <rect>
+          <x>600</x>
+          <y>380</y>
+          <width>681</width>
+          <height>341</height>
+         </rect>
+        </property>
+        <property name="intValue" stdset="0">
+         <number>10</number>
+        </property>
+       </widget>
+       <zorder>btnLigar</zorder>
+       <zorder>Slider</zorder>
+       <zorder>label</zorder>
+       <zorder>labelPWM</zorder>
+       <zorder>btnAttack</zorder>
+       <zorder>btnSettings</zorder>
+       <zorder>label_5</zorder>
+       <zorder>lcdNumber</zorder>
+      </widget>
+      <widget class="QWidget" name="page_2">
+       <widget class="QLabel" name="label_2">
+        <property name="geometry">
+         <rect>
+          <x>290</x>
+          <y>450</y>
+          <width>431</width>
+          <height>141</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Bauhaus 93</family>
+          <pointsize>26</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel { background-color : blck; color : Green; }</string>
+        </property>
+        <property name="text">
+         <string>IP: </string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_3">
+        <property name="geometry">
+         <rect>
+          <x>290</x>
+          <y>610</y>
+          <width>431</width>
+          <height>141</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Bauhaus 93</family>
+          <pointsize>26</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel { background-color : black; color : Green; }</string>
+        </property>
+        <property name="text">
+         <string>Porta: </string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="txtStatus">
+        <property name="geometry">
+         <rect>
+          <x>830</x>
+          <y>790</y>
+          <width>1071</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Bauhaus 93</family>
+          <pointsize>26</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel { 
+	
+		background-color : black; 
+		color : Green;
+
+ }</string>
+        </property>
+        <property name="text">
+         <string>Status: Desconectado.</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btnVoltar">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>20</y>
+          <width>221</width>
+          <height>161</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+     background-color: #121212; 
+	border: 1px solid black;
+     border-radius: 1px;
+	color: white;
+}</string>
+        </property>
+        <property name="text">
+         <string>&lt;-</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btnConectar">
+        <property name="geometry">
+         <rect>
+          <x>2000</x>
+          <y>510</y>
+          <width>471</width>
+          <height>211</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Bauhaus 93</family>
+          <pointsize>28</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+     background-color: #121212; 
+	border: 1px solid black;
+     border-radius: 1px;
+	color: Green;
+}</string>
+        </property>
+        <property name="text">
+         <string>Conectar</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="txtIP">
+        <property name="geometry">
+         <rect>
+          <x>830</x>
+          <y>450</y>
+          <width>1081</width>
+          <height>141</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Bauhaus 93</family>
+          <pointsize>26</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: white;
+
+background-color: qconicalgradient(cx:0.773, cy:0.573045, angle:0, stop:0.357955 rgba(0, 0, 0, 255), stop:0.772727 rgba(1, 160, 32, 255));</string>
+        </property>
+        <property name="text">
+         <string>192.168.4.1</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="txtPorta">
+        <property name="geometry">
+         <rect>
+          <x>830</x>
+          <y>610</y>
+          <width>1081</width>
+          <height>141</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Bauhaus 93</family>
+          <pointsize>26</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: white;
+background-color: qconicalgradient(cx:0.773, cy:0.573045, angle:0, stop:0.357955 rgba(0, 0, 0, 255), stop:0.772727 rgba(1, 160, 32, 255));</string>
+        </property>
+        <property name="text">
+         <string>5000</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_4">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>1210</y>
+          <width>601</width>
+          <height>81</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Bauhaus 93</family>
+          <pointsize>28</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>Ronaldinho</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
